@@ -10,7 +10,7 @@ if(userInp.lower() == 'y'):
     print (os.system('git checkout '+featureBranch))
     print (os.system('git pull origin '+featureBranch))
     print (os.system('git checkout '+targetBranch))
-    print (os.system('git reset --hard '+targetBranch))
+    print (os.system('git reset --hard '+featureBranch))
     print (os.system('git push origin --force '+targetBranch))
     print("Done.Thanks")
 else:
